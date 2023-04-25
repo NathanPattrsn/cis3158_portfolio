@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nathan Patterson Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+    
+    <header id="myHeader">
+        <div class="header-left">
+            <a href="index.html"><img src="images/nathan.png" style="width: 50%;"></a>
+        </div>
+       
+        <div class="header-right">
+            <div class="navbar">
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Work</a></li>
+                <li><a href="#section4">Contact</a></li>
+              </ul>
+              </div>
+        </div>
+    </header>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+
+    <section id="section1">
+    <div class="row">
+        <div class="column3">
+            <img id="nathan2" src="images/nathan2 - Copy.jpg">
+            <h1 id="h1text1">I am Nathan Patterson<br>Website Developer & Designer</h1>
+            
+        </div>
+    </div>
+</section>
+
+<section id="section2">
+    <div class="row">
+        <div class="column4">
+            <h1 id="h1text2">About Me</h1>
+            <p id="ptext1">I am a web development student at Edge Hill University. I have gained a fair amount of knowledge in the field of web development ranging from 
+                front-end development to UX design. Throughout my journey I have gained some key technical skills being: </p>
+            <ul>Front-End Development - HTML, CSS, JavaScript</ul>
+            <ul>Back-End Development - PHP, Laravel, MySQL</ul>
+            <ul>UX (User Experience) Design - Figma</ul>
+            <ul>Linux Command Line</ul>
+            <ul>Working with Git Repositories - Github, BitBucket</ul>
+            <p id="ptext1"> I have also developed some key soft skills being:</p>
+            <ul>Teamwork</ul>
+            <ul>Leadership</ul>
+            <ul>Communication</ul>
+            <ul>Time Management</ul>
+            <ul>Problem Solving</ul>
+        </div>
+    </div>
+</section>
+
+<section id="section3">
+    <div class="row">
+        <div class="column5">
+            <h1 id="h1text3">My Work</h1>
+        </div>
+    </div>
+    <div class="row2">
+        <div class="column6">
+            <h1 id="h1text4">Robot Juice</h1>
+            <p id="ptext2">This project was to design a website in our first year using a brief and images provided to us. This was to demonstrate what knowledge we had of
+                creating websites at the time.
+            </p>
+        </div>
+        <div class="column6">
+            <h1 id="h1text4">Tic-Tac-Toe</h1>
+            <p id="ptext2">This project was to design a tic-tac-toe website application to demonstrate our knowledge of HTML, CSS and JavaScript.
+            </p>
+        </div>
+        <div class="column6">
+            <h1 id="h1text4">Rising Falcons Website</h1>
+            <p id="ptext2">This project was to design a small website using a fake brief and some images. We had to treat this as a real client/customer using their brief to
+                 design the website.
+            </p>
+        </div>
+        <div class="column6">
+            <h1 id="h1text4">Donuts Website</h1>
+            <p id="ptext2">This project was to design a large website using a fake client's brief provided with some images. This website had to include HTML, CSS and the use of a
+                 modern javascript front-end framework which could be: Vue, React or Swelt. 
+            </p>
+        </div>
+    </div>
+    <div class="row4">
+        <div class="column6">
+           <a href="https://robot-juice.netlify.app/"> <button id="btn1" type="button">View Site</button></a>
+           <a href="https://github.com/NathanPattrsn/Robot-Juice-Website"> <button id="btn1" type="button">View GitHub</button></a>
+        </div>
+        <div class="column6">
+            <a href="https://tictactoe-np.netlify.app/"> <button id="btn1" type="button">View Site</button></a>
+            <a href="https://github.com/NathanPattrsn/tictactoe"> <button id="btn1" type="button">View GitHub</button></a>
+         </div>
+         <div class="column6">
+            <a href="https://rising-falcon-small.netlify.app/"> <button id="btn1" type="button">View Site</button></a>
+            <a href="https://github.com/NathanPattrsn/CIS_3159_Site1Small/tree/master"> <button id="btn1" type="button">View GitHub</button></a>
+         </div>
+         <div class="column6">
+            <a href="https://large-donuts.netlify.app/"> <button id="btn1" type="button">View Site</button></a>
+            <a href="https://github.com/NathanPattrsn/Website_2_Donuts/tree/master"> <button id="btn1" type="button">View GitHub</button></a>
+         </div>
+    </div>
+</section>
+
+<section id="section4">
+    <h1 id="h1text5">Contact Me</h1>
+
+    <div class="container">
+        <form action="mailto:npatterson780@gmail.com" method="post" enctype="text/plain">
+      
+          <label for="fname" id="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname" id="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+          <label for="email" id="email">Email</label><br><br>
+          <input type="email" id="emailtxt" name="email" placeholder="Your email.."><br><br>
+      
+          <label for="subject" id="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+      
+        </form>
+      </div>
+</section>
+
+<footer class="footer">
+    <a href="mailto:npatterson780@gmail.com" class="footer__link">hello@nathan</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/NathanPattrsn">
+                <i class="fa fa-github" style="font-size:36px" target="_blank"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/nathan-patterson-5b109b198/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+
+
+
+
+</body>
+</html>

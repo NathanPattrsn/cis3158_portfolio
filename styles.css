@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'Dongle';
+    src: url('Dongle-Regular.woff2') format('woff2'),
+        url('Dongle-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  body{
+    margin: 0;
+  }
+
+  header {
+    background-color: #7c7c7c;
+    height: 110px;
+    margin: 0;
+}
+  
+.header-left {
+    float: left;
+    margin-top: 30px;
+    padding-left: 4%;
+  }
+
+.header-right {
+    float: right;
+    margin-top: 30px;
+    font-size: 22px;
+    padding-right: 4%;
+  }
+  
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .header-right {
+        float: none;
+      }
+  }
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.navbar li {
+    display: inline;
+  }
+
+.navbar{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 40px;
+    word-spacing: 10px;
+  }
+
+a:link {
+    color: #122b33;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: #122b33;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.navbar a:hover {
+    opacity: .7;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .column3 {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  #nathan2{
+    border-radius: 10%;
+    width: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #h1text1{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 60px;
+    margin-top: -8px;
+  }
+
+
+  #section1{
+    border-bottom: #122b33 2px solid;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .column4 {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  #h1text2{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 60px;
+    margin-top: 0px;
+  }
+
+  #ptext1{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .column4 ul{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 27px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #section2{
+    border-bottom: #122b33 2px solid;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  #h1text3{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 60px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+
+
+  .column5 {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .column6 {
+    float: left;
+    text-align: center;
+    width: 25%;
+    font-size: 20px;
+  }
+
+  #h1text4{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #ptext2{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 26px;
+  }  
+
+  #section3{
+    border-bottom: #122b33 2px solid;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 520px;
+  }
+
+#btn1{
+  background-color: #37829b;
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 27px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#btn1:hover {
+    background-color: #122b33;
+  }
+
+  #h1text5{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 60px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #37829b;
+    color: white;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 27px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  input[type=reset] {
+    background-color: #37829b;
+    color: white;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 27px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* When moving the mouse over the submit button, add a darker color */
+  input[type=submit]:hover {
+    background-color: #122b33;
+  }
+
+  input[type=reset]:hover {
+    background-color: #122b33;
+  }
+  
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 40px;
+    padding-bottom: 5%;
+  }
+  
+  #firstname{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 30px;
+  }
+  
+  #lastname{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 30px;
+  }
+  
+  #email{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 30px;
+  }
+  
+  #emailtxt{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  
+  #subject{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 30px;
+  }
+
+  /* footer */
+
+.footer {
+    background: #7c7c7c;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+    
+
+}
+
+.footer a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link {
+    font-weight: var(--fw-bold);
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 28px;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
